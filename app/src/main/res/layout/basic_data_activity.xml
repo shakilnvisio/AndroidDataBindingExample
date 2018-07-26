@@ -2,9 +2,16 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+        <!-- this basicData variable does not have any observable-->
         <variable
             name="basicData"
             type="com.nvisio.jobfire.androiddatabindingexample.basic_data_binding.model.BasicDataModel"/>
+    
+        <!---->
+        <variable
+            name="data_with_baseObservable"
+            type="com.nvisio.jobfire.androiddatabindingexample.basic_data_binding.model.BasicDataModelWithBaseObservable"/>
+
     </data>
 
     <LinearLayout
@@ -20,13 +27,45 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Basic without observable"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
                 android:text='@{basicData.name}'/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Change Text Basic"
+                android:onClick="ChangeBasic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Basic without observable"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text='@{basicData.name}'/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Change Text Basic"
+                android:onClick="ChangeBasic"/>
         </LinearLayout>
     </LinearLayout>
 </layout>
