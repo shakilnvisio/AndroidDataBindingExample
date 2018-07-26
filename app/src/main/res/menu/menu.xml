@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:id="@+id/title"
+     android:icon="@android:drawable/ic_menu_add"
+     android:title="Title" />
+ <item
+     android:id="@+id/coming"
+     android:icon="@android:drawable/ic_menu_add"
+     android:title="Coming" />
+
+ <item
+     android:id="@+id/int_menu"
+     android:icon="@android:drawable/ic_menu_add"
+     android:title="Interactive Menu" />
+ <item
+     android:id="@+id/motor"
+     android:icon="@android:drawable/ic_menu_add"
+     android:title="Motor Cycle" />
+
+ <item
+     android:id="@+id/spalsh"
+     android:icon="@android:drawable/ic_menu_add"
+     android:title="Spalsh" />
+</menu>
